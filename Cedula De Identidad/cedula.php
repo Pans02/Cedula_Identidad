@@ -85,7 +85,7 @@
             <img src="<?php echo $resultado['foto'];?>">
             <div class="rut">
                 <br>
-                <b>Rut: </b><?php echo $resultado['rut']; ?>
+                <b>RUN: </b><?php echo $resultado['rut']; ?>
             </div>
         </div>
         
