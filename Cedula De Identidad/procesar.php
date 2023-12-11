@@ -72,10 +72,17 @@
     $fechaVencimiento = $fechaActual->modify('+5 years');
     $fechaActual= $fechaActual->format('Y-m-d');
     $fechaVencimiento = $fechaVencimiento->format('Y-m-d');
+    $fechaActual = new DateTime();
+    $fechaActual= $fechaActual->format('Y-m-d');
+    
+    echo $fechaActual;
 
-    if (!verificar_rut($rut) || $fecha_nacimiento>$fechaActual) {
-        echo "ERROR EN LA INFORMACION.";
-    } else {
+    if (!verificar_rut($rut)) {
+        echo "ERROR: RUT INVALIDO.";
+    }
+    elseif($fecha_nacimiento>$fechaActual){
+        echo "ERROR: FECHA DE NACIMIENTO INVALIDA";
+    }else {
         crear_persona($nombres, $apellido_paterno, $apellido_materno, $rut, $nacionalidad, $sexualidad, $fecha_nacimiento, $lugar_nacimiento, $profesion, $discapacidad, $donante, $archivo_nuevo);
         require_once("tabla.php");
     }
