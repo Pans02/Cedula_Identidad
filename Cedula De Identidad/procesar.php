@@ -74,8 +74,7 @@
     $fechaVencimiento = $fechaVencimiento->format('Y-m-d');
     $fechaActual = new DateTime();
     $fechaActual= $fechaActual->format('Y-m-d');
-    
-    echo $fechaActual;
+
 
     if (!verificar_rut($rut)) {
         echo "ERROR: RUT INVALIDO.";
