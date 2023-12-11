@@ -124,9 +124,28 @@
                 <div class="info2">
                     <b>NACIO EN:</b> <?php echo $resultado['lugar_de_nacimiento']; ?><br>
                     <b>PROFESION:</b> <?php echo $resultado['profesion']; ?>
+                    <br><br><br>
+                    
                 </div>
-                <br>
+                <br><br><br>
                 <div class="relleno">
+                <br>
+                <b>
+                <?php
+                    if($resultado['discapacidad']){
+                        echo "INSCRITO EN EL REGISTRO DE DISCAPACIDAD | ";
+                    }
+                    else{
+                        echo"NO INSCRITO EN EL REGISTRO DE DISCAPACIDAD | ";
+                    }
+                    if($resultado['donante']){
+                        echo "DONANTE";
+                    }
+                    else{
+                        echo"NO DONANTE";
+                    }
+                ?>
+                </b>
                     <br><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi nobis, earum, molestias mollitia saepe repudiandae neque in laborum, sunt tempore nam. Voluptates totam, doloremque pariatur deleniti aperiam consequatur maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, debitis commodi a, quod error sed non modi eum animi hic minima deserunt illo doloremque fuga id aut ipsum quibusdam. Facere?
                 </div>
             </div>
