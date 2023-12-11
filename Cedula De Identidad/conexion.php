@@ -1,7 +1,7 @@
 <?php
 
 $db_host = "localhost";
-$db_name = "registros para cedulas";
+$db_name = "registros_para_cedulas";
 $db_user = "root";
 $db_pass = "";
 
